@@ -1,22 +1,28 @@
 import axios from 'axios';
 import { ABOUT_API_URL } from '../utils/constants';
+import { Dispatch } from 'react';
 
 interface AddAboutPayload {
   rthId: string;
   addedBy: string;
   addedText: string;
 }
-
+export interface AddAboutAction {
+  type: string;
+  payload?: any;
+}
 interface UpdateAboutPayload {
   addedBy: string;
   addedText: string;
 }
 
 //POST FOR CREATE ABOUT...
-export const addAboutAPI = async (payload: AddAboutPayload) => {
+export const addAboutAPI = async (payload: AddAboutPayload,dispatch?: Dispatch<AddAboutAction>) => { // You can pass dispatch as a argument
   try {
     const response = await axios.post(`${ABOUT_API_URL}/addAbout`, payload);
     return response.data;
+    // The bleow code is sample code of dispatch
+    // dispatch(samepleGetData(response.data));
   } catch (error: any) {
     throw new Error(error.response?.data?.message || 'Failed to add the about.');
   }
