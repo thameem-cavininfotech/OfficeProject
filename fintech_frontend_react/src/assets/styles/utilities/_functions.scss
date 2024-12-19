@@ -1,0 +1,24 @@
+@function darken-color($color, $percentage) {
+    @return darken($color, $percentage);
+  }
+  
+  @function px-to-rem($px) {
+    $base-size: 16px;
+    @return $px / $base-size + rem;
+  }
+  
+  @function heading-font-size($level) {
+    @if $level == 1 {
+      @return 2.5rem;
+    }
+    @else if $level == 2 {
+      @return 2rem;
+    }
+    @else if $level == 3 {
+      @return 1.75rem;
+    }
+    @else {
+      @return 1.5rem;
+    }
+  }
+  

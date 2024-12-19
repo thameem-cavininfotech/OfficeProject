@@ -1,0 +1,23 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f4f4f4;
+$border-radius: 5px;
+
+$spacing-unit: 1rem;
+
+body {
+  background-color: $background-color;
+  padding: $spacing-unit;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}

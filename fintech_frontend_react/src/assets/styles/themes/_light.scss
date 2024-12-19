@@ -1,0 +1,24 @@
+$background-color: #fff;
+$text-color: #333;
+$link-color: #007bff;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+}
+
+button {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

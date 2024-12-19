@@ -1,0 +1,22 @@
+.text-center {
+    text-align: center;
+  }
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .show {
+    display: block !important;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  

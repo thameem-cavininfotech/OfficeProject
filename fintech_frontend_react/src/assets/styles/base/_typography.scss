@@ -1,0 +1,29 @@
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Arial', sans-serif;
+$base-font-size: 16px;
+$heading-font-weight: 700;
+$body-font-weight: 400;
+
+body {
+  font-family: $primary-font;
+  font-size: $base-font-size;
+  font-weight: $body-font-weight;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary-font;
+  font-weight: $heading-font-weight;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
